@@ -22,12 +22,12 @@ from wyoming.tts import (
     SynthesizeStopped,
 )
 
-from .sentence_boundary import SentenceBoundaryDetector, remove_asterisks
+from sentence_boundary import SentenceBoundaryDetector, remove_asterisks
 
 _LOGGER = logging.getLogger(__name__)
 
 class F5TTSProcessManager:
-    def __init__(self, model_name: str = "F5-TTS/F5-TTS", sample_rate: int = 24000):
+    def __init__(self, model_name: str = "SWivid/F5-TTS", sample_rate: int = 24000):
         self.model_name = model_name
         self.sample_rate = sample_rate
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
