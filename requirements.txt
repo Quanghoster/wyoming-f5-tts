@@ -1,0 +1,7 @@
+wyoming>=1.0.0
+torch>=2.4.0
+torchaudio>=2.4.0
+transformers>=4.40.0
+funasr>=1.0.0
+numpy>=1.21.0
+
