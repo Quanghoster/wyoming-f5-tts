@@ -1,5 +1,5 @@
-# Wyoming Piper
-
+## Wyoming Piper
+#Wyoming F5-TTS
 [Wyoming protocol](https://github.com/rhasspy/wyoming) server for the F5-TTS text to speech system.
 
 Under development
@@ -12,30 +12,30 @@ Under development
 
 ## Local Install
 
-#Clone the repository and set up Python virtual environment:
+##Clone the repository and set up Python virtual environment:
 
-#``` sh
-#git clone https://github.com/rhasspy/wyoming-piper.git
-#cd wyoming-piper
-#script/setup
-#```
+##``` sh
+##git clone https://github.com/rhasspy/wyoming-piper.git
+##cd wyoming-piper
+##script/setup
+##```
 
-#Install Piper
-#```sh
-#curl -L -s "https://github.com/rhasspy/piper/releases/download/v1.2.0/piper_amd64.tar.gz" | tar -zxvf - -C /usr/share
-#```
+##Install Piper
+##```sh
+##curl -L -s "https://github.com/rhasspy/piper/releases/download/v1.2.0/piper_amd64.tar.gz" | tar -zxvf - -C /usr/share
+##```
 
-#Run a server that anyone can connect to:
+##Run a server that anyone can connect to:
 
-#``` sh
-#script/run --piper '/usr/share/piper/piper' --voice en_US-lessac-medium --uri 'tcp://0.0.0.0:10200' --data-dir /data --download-dir /data 
-#```
+##``` sh
+##script/run --piper '/usr/share/piper/piper' --voice en_US-lessac-medium --uri 'tcp://0.0.0.0:10200' --data-dir /data --download-dir /data 
+##```
 
 ## Docker Image
-#
-#``` sh
-#docker run -it -p 10200:10200 -v /path/to/local/data:/data rhasspy/wyoming-piper \
-#    --voice en_US-lessac-medium
-#```
+##
+##``` sh
+##docker run -it -p 10200:10200 -v /path/to/local/data:/data rhasspy/wyoming-piper \
+##    --voice en_US-lessac-medium
+##```
 
-#[Source](https://github.com/rhasspy/wyoming-addons/tree/master/piper)
+##[Source](https://github.com/rhasspy/wyoming-addons/tree/master/piper)
